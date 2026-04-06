@@ -1,0 +1,131 @@
+html {
+  line-height: 1.6;
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  background-color: hsl(30, 38%, 92%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#big {
+  margin: 15% auto 0.714rem auto;
+  width: 95%;
+  border-radius: 0.714rem;
+  background: hsl(0, 0%, 100%);
+}
+
+#bottom {
+  padding: 2.143rem;
+}
+
+#perfume {
+  letter-spacing: 0.357rem;
+}
+
+#image {
+  width: 100%;
+  border-radius: 0.714rem 0.714rem 0 0;
+}
+
+#heading {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1.429rem 0rem;
+  color: hsl(212, 21%, 14%);
+  line-height: normal;
+}
+
+
+#current-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+  display: inline-block;
+  margin: 0.714rem 0;
+}
+
+#old-price {
+  text-decoration: line-through;
+  display: inline-block;
+  vertical-align: super;
+  font-size: 0.8rem;
+  margin: 0rem 0.714rem;
+}
+
+button {
+  display: block;
+  background: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.857rem 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#cart_icon>img {
+  margin-right: 0.714rem;
+}
+
+button:hover {
+  background: hsl(158, 42%, 18%);
+}
+
+.attribution {
+  color: hsl(158, 36%, 37%);
+  margin: 0.714rem 0;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(158, 36%, 37%);
+
+}
+
+.attribution a:hover {
+  color: hsl(158, 42%, 18%);
+
+}
+
+@media screen and (min-width: 900px) {
+  #container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #big {
+    width: 50rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  #image {
+    border-radius: 0.714rem 0 0 0.714rem;
+    height: 100%;
+  }
+
+  #heading {
+    font-size: 3rem;
+  }
+
+  #description {
+    font-size: 1.1rem;
+  }
+}
